@@ -9,7 +9,7 @@ execute:
 ---
 
 # 🎨 DAFT Package Challenge - Recreating the Scurvy DAGs
-
+<!--
 ::: {.callout-important}
 ## 📊 Challenge Requirements In Section [Student Analysis Section](#student-analysis-section)
 - Recreate all three scurvy DAGs using DAFT programming
@@ -86,6 +86,7 @@ print("Ready to create beautiful DAGs!")
 ## The Three DAGs: Your Mission
 
 Your task is to recreate these three historical DAGs using DAFT, making them visually appealing and professionally formatted.
+-->
 
 ### DAG 1: The 1747 Understanding (Correct but Incomplete)
 
@@ -139,6 +140,23 @@ plt.title("Simplified Lind's Model (1747)", fontsize=14, fontweight='bold')
 plt.show()
 
 ```
+
+#### Analysis of DAG 1: The 1747 Understanding
+
+This DAG represents the historical understanding that emerged from James Lind's 1747 experiment aboard the HMS Salisbury. Lind's experiment was one of the first controlled clinical trials in medical history, where he divided sailors suffering from scurvy into groups and gave different treatments to each group.
+
+**What the DAG shows:**
+- **Direct causal relationship:** The model shows lemons directly preventing scurvy
+- **Empirical evidence:** This understanding was based on observational data and experimental evidence (lemons worked in practice)
+- **Limitation:** The mechanism was unknown - why lemons worked remained a mystery
+
+**Why this understanding was incomplete:**
+- Lind knew **that** lemons prevented scurvy, but not **why**
+- The critical intermediary (Vitamin C) was not yet discovered
+- This incomplete understanding would later cause the cure to be lost when lemons were replaced with alternatives that contained less of the essential nutrient
+
+**Historical significance:**
+This DAG represents a crucial moment where empirical observation led to a solution, even without mechanistic understanding. The yellow color of the "Lemons" node emphasizes that this was a discovery about a specific food, while the thistle-colored "Scurvy" node represents the disease being prevented.
 
 ### DAG 2: The Misguided Belief (Wrong Understanding)
 
@@ -203,6 +221,29 @@ plt.title("Updated Bacterial Theory (Late 19th Century)", fontsize=14, fontweigh
 plt.show()
 
 ```
+
+#### Analysis of DAG 2: The Misguided Belief
+
+This DAG represents the tragically incorrect understanding that emerged over time after Lind's discovery. As the "why" of scurvy prevention remained unknown, people developed a theoretical explanation that seemed logical at the time.
+
+**What the DAG shows:**
+- **Two-step causal chain:** Acid → Bacteria Death → Scurvy Prevention
+- **Theoretical reasoning:** The model proposes that acid kills bacteria in food, which then prevents scurvy
+- **Confidence despite being wrong:** The model appears complete and causal
+
+**Why this understanding was wrong:**
+- **Bacteria don't cause scurvy:** Scurvy is a deficiency disease, not caused by bacteria
+- **Acid is incidental:** What mattered was not the acid (ascorbic acid), but rather that Vitamin C happened to be in acidic fruits
+- **Confounded relationship:** The correlation between acid and Vitamin C led to a fundamental misattribution of the causal mechanism
+
+**Historical consequences:**
+This erroneous understanding had devastating real-world impact:
+- **Limes replaced lemons:** Cheaper limes with less Vitamin C were adopted, thinking acid was the key ingredient
+- **Vinegar used instead:** Some ships tried using vinegar or other acids, completely ineffective against scurvy
+- **Scurvy returned:** Deaths from scurvy increased dramatically in the late 19th and early 20th centuries
+- **Lost knowledge:** The cure was effectively lost for over 150 years
+
+The blue and orange colors in this DAG suggest the theoretical nature of this belief - a hypothesis that seemed plausible but was fundamentally incorrect. This DAG serves as a powerful reminder of how misattributed causality can lead to disaster when treating symptoms rather than understanding true mechanisms.
 
 ### DAG 3: The 1928 Understanding (Complete and Correct)
 
@@ -269,6 +310,67 @@ plt.show()
 
 ```
 
+#### Analysis of DAG 3: The 1928 Understanding
+
+This DAG represents the complete and correct understanding that emerged with the discovery of Vitamin C. This breakthrough finally explained both **that** and **why** lemons prevented scurvy, resolving over 180 years of confusion.
+
+**What the DAG shows:**
+- **True causal mechanism:** Vitamin C → Collagen Synthesis → Scurvy Prevention
+- **Biochemical pathway:** The DAG shows how Vitamin C affects the body's ability to synthesize collagen
+- **Complete understanding:** This model explains both the prevention of scurvy and why deficiency causes symptoms
+
+**Why this understanding is correct:**
+- **Biochemical evidence:** Albert Szent-Györgyi discovered Vitamin C in 1928, winning the Nobel Prize in 1937
+- **Mechanistic clarity:** Vitamin C is a cofactor in collagen synthesis; without it, connective tissues deteriorate
+- **Explains all prior observations:** This model explains why lemons worked (Vitamin C), why acids seemed to work (they contained Vitamin C), and why the cure was lost (when switched to acids without Vitamin C)
+
+**Historical significance:**
+The discovery of Vitamin C represents one of the greatest triumphs in nutritional science:
+- **Named for anti-scorbutic property:** "Ascorbic acid" means "anti-scurvy acid"
+- **Clarified confusion:** Explained why citrus fruits worked and why acid alone didn't
+- **Preventable deaths:** Millions of sailors and others died unnecessarily due to the 150-year gap in understanding
+- **Lasting impact:** This discovery led to vitamin fortification and nutritional science
+
+The orange color of the "Vitamin C" node represents the vitality and life-giving properties of this essential nutrient, while the green "Collagen Synthesis" node shows the biological process that maintains health. The purple "Scurvy" node remains the same across all DAGs, showing the consistent outcome but with dramatically different understandings of causation.
+
+This DAG serves as a model for understanding complex biological relationships - showing that empirical observation (DAG 1) and theoretical frameworks (DAG 2) must be validated through mechanistic understanding (DAG 3).
+
+### Comparative Analysis: The Evolution of Understanding
+
+When comparing these three DAGs, we see the evolution of scientific understanding about scurvy prevention - from empirical observation through flawed theoretical reasoning to complete mechanistic understanding.
+
+**From Observation to Understanding:**
+- **DAG 1 (1747):** Represents the "what works" stage - knowledge through empirical testing
+- **DAG 2 (Misguided):** Represents the "why it might work" stage - flawed theoretical explanation
+- **DAG 3 (1928):** Represents the "how it actually works" stage - correct mechanistic understanding
+
+**Key Differences in the DAGs:**
+
+1. **Number of nodes:** 
+   - DAG 1: 2 nodes (simplest, incomplete)
+   - DAG 2: 3 nodes (expanded, but incorrect)
+   - DAG 3: 3 nodes (complete and correct)
+
+2. **Causal pathways:**
+   - DAG 1: Direct causation (lemons → scurvy prevention)
+   - DAG 2: Indirect causation through wrong mechanism (acid → bacteria death → scurvy prevention)
+   - DAG 3: Indirect causation through correct mechanism (Vitamin C → collagen synthesis → scurvy prevention)
+
+3. **Color coding meaning:**
+   - Each DAG uses color strategically to represent the nature of the understanding
+   - Yellow/Green nodes represent food sources or beneficial nutrients
+   - Blue/Orange nodes represent theoretical constructs
+   - Purple nodes consistently represent the disease outcome
+
+**Lessons for Data Science:**
+The scurvy story teaches us critical lessons about causality, correlation, and the dangers of incomplete understanding:
+
+1. **Empirical validity doesn't guarantee comprehension** (DAG 1)
+2. **Intuitive theories can be dangerously wrong** (DAG 2)
+3. **Complete mechanistic understanding prevents tragic mistakes** (DAG 3)
+4. **Visualization through DAGs helps us think clearly about causality** (all three DAGs)
+
+<!--
 ## Student Requirements Section: Mastering DAFT Visualization {#student-analysis-section}
 
 **Your Task:** Demonstrate your mastery of DAFT through comprehensive recreation of the three scurvy DAGs and thoughtful analysis. The bulk of your grade comes from successfully recreating the DAGs and answering the discussion questions.
@@ -401,3 +503,4 @@ pgm.render()
 
 
 
+-->
